@@ -76,20 +76,69 @@ body {
 main {
     width: 100vw;
     display: flex;
-    background-color: blue;
+    background-color: #f8f8f8;
+    padding: 16px;
+    padding-left: 75px;
 
 }
 
 main .video {
-    width:70vw;
-    background-color:blueviolet;
-    margin: 16px;
-    margin-left: 75px;
+    width: 70vw;
+
+
 }
+
+main .video img {
+    width: 952px;
+
+}
+
+
+
+main .video-actions {
+    display: flex;
+    width: 902px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .video-actions .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main .video .video-actions img {
+    width: 24px;
+    height: 24px;
+}
+
+main .video .video-actions .dio {
+    width: 42px;
+    height: 42px;
+
+}
+
+main .like {
+    width: 63px;
+}
+
+main .deslike{
+    width:100px ;
+}
+
+main .share{
+    width: 115px;
+}
+
+main .download{
+
+    width:95px;
+}
+
 
 main .sidebar {
     width: 30vw;
     background-color: green;
-    margin: 16px;
-    
 }
