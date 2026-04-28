@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
 
 body {
     background-color: #f8f8f8;
+    font-family: "Roboto", sans-serif;
 }
 
 .menu {
@@ -74,7 +77,7 @@ body {
 }
 
 main {
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     background-color: #f8f8f8;
     padding: 16px;
@@ -83,13 +86,24 @@ main {
 }
 
 main .video {
-    width: 70vw;
+    /* max-width: 70vw; */
+    max-width: 952px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+    gap: 16px;
 
 
 }
 
 main .video img {
-    width: 952px;
+    width: 100%;
+
+}
+
+main .video .title {
+    font-weight: 600;
+    font-size: 20px;
 
 }
 
@@ -106,6 +120,9 @@ main .video-actions .icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+
 
 }
 
@@ -120,25 +137,110 @@ main .video .video-actions .dio {
 
 }
 
+main .button {
+    width: 159px;
+    height: 40px;
+    background-color: red;
+    color: #f8f8f8;
+    text-transform: uppercase;
+    border-radius: 2px;
+    border-style: none;
+}
+
+main .channel-infos {
+    margin-left: -30px;
+}
+
+main .channel-infos p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+main .channel-infos p:last-of-type {
+    color: #515151;
+    font-size: 14px;
+    font-weight: 400;
+}
+
 main .like {
     width: 63px;
+
 }
 
-main .deslike{
-    width:100px ;
+main .deslike {
+    width: 100px;
+
 }
 
-main .share{
+main .share {
     width: 115px;
+
 }
 
-main .download{
+main .download {
 
-    width:95px;
+    width: 95px;
+
 }
+
+main .views {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+main .description {
+    width: 510px;
+    height: 64px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151;
+}
+
 
 
 main .sidebar {
-    width: 30vw;
-    background-color: green;
+    /* max-width: 30vw; */
+    width: 372px;
+
+
+
+}
+
+main .sidebar .mini-video {
+    display: flex;
+
+    margin-left: 16px;
+    padding: 6px;
+}
+
+main .sidebar .mini-video img {
+    width: 160px;
+    height: 90px;
+}
+
+main .sidebar .video-infos {
+    min-width: 196px;
+    min-height: 89px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    gap: 8px;
+}
+
+main .sidebar .mini-video .description-video {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+main .sidebar .mini-video .channel-video {
+    font-weight: 400;
+    font-size: 12px;
+    color: #515151;
+
+}
+
+main .sidebar .mini-video .views-video {
+    font-weight: 400;
+    font-size: 12px;
+    color: #515151;
 }
